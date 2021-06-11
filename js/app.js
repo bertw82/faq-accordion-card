@@ -3,6 +3,7 @@ const btn = document.querySelectorAll('button[type="button"]');
 
 // flip button on dropdown
 btn.forEach(button => button.addEventListener('click', () => {
+    // button.style.transform = 'rotate(180deg)';
     if(button.classList.contains('flip')){
         button.classList.remove('flip');
     } else {

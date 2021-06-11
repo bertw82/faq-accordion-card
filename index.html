@@ -13,93 +13,102 @@
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   <body>
-    <div class="main-image">
-    </div>
-    <div class="main-image-background">
-    </div>
-    <div class="bg-white m-3 p-3 pb-4 rounded main-container">
-      <h1 class="text-center fw-bolder">FAQ</h1>
-    
-      <!-- queston one -->
-      <div class="question question-border mb-3 pb-2">
-        <div class="d-flex justify-content-between align-items-center">
-          <p class="mb-0">How many team members can I invite?</p>
-          <button class="border-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            <img src="images/icon-arrow-down.svg" alt="down arrow">
-          </button>
-        </div>
-        <div class="collapse" id="collapseOne">
-          <div class="mb-3 mt-2">
-            You can invite up to 2 additional users on the Free plan. There is no limit on 
-            team members for the Premium plan.
-          </div>
-        </div>
+
+    <div class="image-container">
+      <div class="box"></div>
+      <div class="main-image">
       </div>
+      <div class="main-image-background">
+      </div>
+    </div>
+  
+    <div class="bg-white m-3 p-3 pb-4 d-xl-flex align-items-xl-center justify-content-xl-between rounded main-container">
+      <div class="dummy"></div>
+      <div class="wrapper align-self-xl-end">
+        <h1 class="text-center fw-bolder mb-3">FAQ</h1>
       
-      <!-- question two -->
-      <div class="question question-border mb-3 pb-2">
-        <div class="d-flex justify-content-between align-items-center">
-          <p class="mb-0">What is the maximum file upload size?</p>
-          <button class="border-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <img src="images/icon-arrow-down.svg" alt="down arrow">
-          </button>
+        <!-- question one -->
+        <div class="question question-border mb-3 pb-2">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="mb-0">How many team members can I invite?</p>
+            <button class="border-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <img src="images/icon-arrow-down.svg" alt="down arrow">
+            </button>
+          </div>
+          <div class="collapse" id="collapseOne">
+            <div class="mb-3 mt-2">
+              You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.
+            </div>
+          </div>
         </div>
-        <div class="collapse" id="collapseTwo">
-          <div class="mb-3 mt-2">
-            No more than 2GB. All files in your account must fit your allotted storage space.
+        
+        <!-- question two -->
+        <div class="question question-border mb-3 pb-2">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="mb-0">What is the maximum file upload size?</p>
+            <button class="border-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <img src="images/icon-arrow-down.svg" alt="down arrow">
+            </button>
+          </div>
+          <div class="collapse" id="collapseTwo">
+            <div class="mb-3 mt-2">
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </div>
+          </div>
+        </div>
+  
+        <!-- question three -->
+        <div class="question question-border mb-3 pb-2">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="mb-0">How do I reset my password?</p>
+            <button class="border-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <img src="images/icon-arrow-down.svg" alt="down arrow">
+            </button>
+          </div>
+          <div class="collapse" id="collapseThree">
+            <div class="mb-3 mt-2">
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </div>
+          </div>
+        </div>
+      
+        <!-- question four -->
+        <div class="question question-border mb-3 pb-2">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="mb-0">Can I cancel my subscription?</p>
+            <button class="border-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <img src="images/icon-arrow-down.svg" alt="down arrow">
+            </button>
+          </div>
+          <div class="collapse" id="collapseFour">
+            <div class="mb-3 mt-2">
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </div>
+          </div>
+        </div>
+  
+        <!-- question five -->
+        <div class="question question-border mb-3 pb-2">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="mb-0">Do you provide additional support?</p>
+            <button class="border-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <img src="images/icon-arrow-down.svg" alt="down arrow">
+            </button>
+          </div>
+          <div class="collapse" id="collapseFive">
+            <div class="mb-3 mt-2">
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- question three -->
-      <div class="question question-border mb-3 pb-2">
-        <div class="d-flex justify-content-between align-items-center">
-          <p class="mb-0">How do I reset my password?</p>
-          <button class="border-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            <img src="images/icon-arrow-down.svg" alt="down arrow">
-          </button>
-        </div>
-        <div class="collapse" id="collapseThree">
-          <div class="mb-3 mt-2">
-            Click “Forgot password” from the login page or “Change password” from your profile page.
-            A reset link will be emailed to you.
-          </div>
-        </div>
-      </div>
-    
-      <!-- question four -->
-      <div class="question question-border mb-3 pb-2">
-        <div class="d-flex justify-content-between align-items-center">
-          <p class="mb-0">Can I cancel my subscription?</p>
-          <button class="border-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            <img src="images/icon-arrow-down.svg" alt="down arrow">
-          </button>
-        </div>
-        <div class="collapse" id="collapseFour">
-          <div class="mb-3 mt-2">
-            Yes! Send us a message and we’ll process your request no questions asked.
-          </div>
-        </div>
-      </div>
-
-      <!-- question five -->
-      <div class="question question-border mb-3 pb-2">
-        <div class="d-flex justify-content-between align-items-center">
-          <p class="mb-0">Do you provide additional support?</p>
-          <button class="border-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            <img src="images/icon-arrow-down.svg" alt="down arrow">
-          </button>
-        </div>
-        <div class="collapse" id="collapseFive">
-          <div class="mb-3 mt-2">
-            Chat and email support is available 24/7. Phone lines are open during normal business hours.
-          </div>
-        </div>
-      </div>
-   
-    <nav class="navbar fixed-bottom navbar-light text-white attribution-color">
+    <nav class="navbar navbar-light text-white transparent mt-4">
       <div class="container-fluid">
-        <div class="attribution text-center">
+        <div class="attribution d-inline-block mx-auto">
           Challenge by <a class="text-warning" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
           Coded by <a class="text-warning" href="https://bertwitzel.com">Bert Witzel</a>.
         </div>
