@@ -5,6 +5,23 @@ body {
     min-height: 700px;
 }
 
+h1 {
+    color: hsl(238, 29%, 16%);
+}
+
+p[class="mb-0"] a {
+    text-decoration: none!important;
+    color: hsl(237, 12%, 33%)!important;
+}
+
+p[class="mb-0"] a:hover {
+    color: hsl(14, 88%, 65%)!important;
+}
+
+div[class="mb-3 mt-2"]{
+    color: hsl(240, 6%, 50%);
+}
+
 .main-container {
     margin-top: 10em!important;
     padding-top: 9em!important;
@@ -13,6 +30,7 @@ body {
     border-radius: 20px!important;
 }
 
+/* images */
 
 .main-image-background {
     background: url('../images/bg-pattern-mobile.svg');
@@ -36,15 +54,27 @@ body {
     left: 40px;
 }
 
+/* misc */
+
 .strong-font {
     font-weight: 900;
+    text-decoration: none!important;
 }
 
 .question-border {
     border-bottom: 1px solid hsl(240, 5%, 91%)!important;
 }
 
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution-color { 
+    background-color: hsl(240, 73%, 65%); 
+}
+
 /* button */
+
 .flip {
     transform: rotate(180deg);
 }
@@ -59,15 +89,21 @@ body {
     padding: .375rem .75rem;
 }
 
-.attribution { 
-    font-size: 11px; text-align: center; 
-}
+/*  media queries */
 
-.attribution-color { 
-    background-color: hsl(240, 73%, 65%); 
+@media (min-width: 768px){
+    .main-container {
+        width: 360px;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+    .main-image {
+        left: 235px;
+    }
+    .main-image-background{
+        left: 260px;
+    }
 }
-
-/*  large screens */
 
 @media (min-width: 1200px) {
     body {
@@ -80,27 +116,30 @@ body {
     }
     .main-container {
         width: 900px;
-        margin-left: auto!important;
-        margin-right: auto!important;
+        height: 590px;
+       
         margin-top: 7em!important;
         padding-top: 5em!important;
         padding-bottom: 5em!important;
     }
     .main-image-background {
         background: url('../images/bg-pattern-desktop.svg');
-        height: 819px;
-        width: 965px;
+        background-position: 100% -270px;
+        height: 590px;
+        width: 400px;
         z-index: 100;
-        top: -210px;
-        left: -450px;
+        top: 100px;
+        left: 150px;
     }
     .main-image {
         background: url('../images/illustration-woman-online-desktop.svg');
+        background-position: 100% 0;
+        background-repeat: no-repeat;
         height: 360px;
-        width: 472px;
+        width: 400px;
         z-index: 1000;
-        top: 145px;
-        left: 40px;
+        top: 165px;
+        left: 150px;
     }
     .box {
         background: url('../images/illustration-box-desktop.svg');
@@ -108,19 +147,20 @@ body {
         height: 110px;
         width: 150px;
         z-index: 2000;
-        top: 280px;
-        left: 50px;
+        top: 305px;
+        left: 60px;
     }
 }
 
 @media (min-width: 1440px) {
     .main-image-background {
-        left: -350px;
+        left: 270px;
+        top: 102px;
     }
     .main-image {
-        left: 140px;
+        left: 270px;
     }
     .box {
-        left: 147px;
+        left: 178px;
     }
 }

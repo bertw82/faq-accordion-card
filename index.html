@@ -24,18 +24,18 @@
   
     <div class="bg-white m-3 p-3 pb-4 d-xl-flex align-items-xl-center justify-content-xl-between rounded main-container">
       <div class="dummy"></div>
-      <div class="wrapper align-self-xl-end">
+      <div class="wrapper align-self-xl-start" id="myParent">
         <h1 class="text-center fw-bolder mb-3">FAQ</h1>
       
         <!-- question one -->
         <div class="question question-border mb-3 pb-2">
           <div class="d-flex justify-content-between align-items-center">
-            <p class="mb-0">How many team members can I invite?</p>
+            <p class="mb-0"><a data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">How many team members can I invite?</a></p>
             <button class="border-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               <img src="images/icon-arrow-down.svg" alt="down arrow">
             </button>
           </div>
-          <div class="collapse" id="collapseOne">
+          <div class="collapse" id="collapseOne" data-bs-parent="#myParent">
             <div class="mb-3 mt-2">
               You can invite up to 2 additional users on the Free plan. There is no limit on 
               team members for the Premium plan.
@@ -51,7 +51,7 @@
               <img src="images/icon-arrow-down.svg" alt="down arrow">
             </button>
           </div>
-          <div class="collapse" id="collapseTwo">
+          <div class="collapse" id="collapseTwo" data-bs-parent="#myParent">
             <div class="mb-3 mt-2">
               No more than 2GB. All files in your account must fit your allotted storage space.
             </div>
@@ -66,7 +66,7 @@
               <img src="images/icon-arrow-down.svg" alt="down arrow">
             </button>
           </div>
-          <div class="collapse" id="collapseThree">
+          <div class="collapse" id="collapseThree" data-bs-parent="#myParent">
             <div class="mb-3 mt-2">
               Click “Forgot password” from the login page or “Change password” from your profile page.
               A reset link will be emailed to you.
@@ -82,7 +82,7 @@
               <img src="images/icon-arrow-down.svg" alt="down arrow">
             </button>
           </div>
-          <div class="collapse" id="collapseFour">
+          <div class="collapse" id="collapseFour" data-bs-parent="#myParent">
             <div class="mb-3 mt-2">
               Yes! Send us a message and we’ll process your request no questions asked.
             </div>
@@ -97,7 +97,7 @@
               <img src="images/icon-arrow-down.svg" alt="down arrow">
             </button>
           </div>
-          <div class="collapse" id="collapseFive">
+          <div class="collapse" id="collapseFive" data-bs-parent="#myParent">
             <div class="mb-3 mt-2">
               Chat and email support is available 24/7. Phone lines are open during normal business hours.
             </div>
