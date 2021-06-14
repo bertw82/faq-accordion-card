@@ -10,6 +10,7 @@ h1 {
 }
 
 p[class="mb-0"] a {
+    cursor: pointer;
     text-decoration: none!important;
     color: hsl(237, 12%, 33%)!important;
 }
@@ -39,8 +40,8 @@ div[class="mb-3 mt-2"]{
     height: 120px;
     width: 250px;
     z-index: 100;
-    top: 140px;
-    left: 70px;
+    top: -3px;
+    left: 50px;
 }
 
 .main-image {
@@ -50,8 +51,8 @@ div[class="mb-3 mt-2"]{
     height: 180px;
     width: 275px;
     z-index: 1000;
-    top: 35px;
-    left: 40px;
+    top: -110px;
+    left: 23px;
 }
 
 /* misc */
@@ -91,23 +92,16 @@ div[class="mb-3 mt-2"]{
 
 /*  media queries */
 
-@media (min-width: 768px){
+@media (min-width: 376px) {
     .main-container {
-        width: 360px;
+        width: 343px;
         margin-left: auto!important;
         margin-right: auto!important;
-    }
-    .main-image {
-        left: 235px;
-    }
-    .main-image-background{
-        left: 260px;
     }
 }
 
 @media (min-width: 1200px) {
     body {
-        /* min-height: 750px; */
         height: 100vh;
     }
     .wrapper {
@@ -115,7 +109,7 @@ div[class="mb-3 mt-2"]{
         margin-right: 2em;
     }
     .main-container {
-        width: 900px;
+        width: 900px!important;
         height: 590px;
        
         margin-top: 7em!important;
@@ -128,8 +122,8 @@ div[class="mb-3 mt-2"]{
         height: 590px;
         width: 400px;
         z-index: 100;
-        top: 100px;
-        left: 150px;
+        top: 0;
+        left: 0;
     }
     .main-image {
         background: url('../images/illustration-woman-online-desktop.svg');
@@ -138,8 +132,8 @@ div[class="mb-3 mt-2"]{
         height: 360px;
         width: 400px;
         z-index: 1000;
-        top: 165px;
-        left: 150px;
+        top: 60px;
+        left: 0;
     }
     .box {
         background: url('../images/illustration-box-desktop.svg');
@@ -147,13 +141,13 @@ div[class="mb-3 mt-2"]{
         height: 110px;
         width: 150px;
         z-index: 2000;
-        top: 305px;
-        left: 60px;
+        top: 200px;
+        left: -93px;
     }
 }
 
 @media (min-width: 1440px) {
-    .main-image-background {
+    /* .main-image-background {
         left: 270px;
         top: 102px;
     }
@@ -162,5 +156,5 @@ div[class="mb-3 mt-2"]{
     }
     .box {
         left: 178px;
-    }
+    } */
 }
