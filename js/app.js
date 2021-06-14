@@ -1,4 +1,4 @@
-// flip button on dropdown
+// flip button on dropdown and add bold font to question
 const collapse = document.querySelectorAll('.collapse');
 
 collapse.forEach(div => div.addEventListener('show.bs.collapse', function () {
